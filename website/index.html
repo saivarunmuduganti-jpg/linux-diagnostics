@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Linux System Diagnostics</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            Linux Diagnostics
+        </div>
+
+        <div class="status">
+            ● System Online
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+
+            <h1>
+                Linux System Diagnostics Toolkit
+            </h1>
+
+            <p>
+                Monitor and diagnose your Linux system resources
+                from one centralized dashboard.
+            </p>
+
+            <button onclick="refreshData()">
+                Refresh System
+            </button>
+
+        </section>
+
+
+        <section class="cards">
+
+            <div class="card">
+
+                <div class="icon">
+                    CPU
+                </div>
+
+                <h3>CPU Usage</h3>
+
+                <div class="value" id="cpu">
+                    --%
+                </div>
+
+                <div class="progress">
+                    <div id="cpuBar"></div>
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icon">
+                    RAM
+                </div>
+
+                <h3>Memory Usage</h3>
+
+                <div class="value" id="memory">
+                    --%
+                </div>
+
+                <div class="progress">
+                    <div id="memoryBar"></div>
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icon">
+                    DISK
+                </div>
+
+                <h3>Disk Usage</h3>
+
+                <div class="value" id="disk">
+                    --%
+                </div>
+
+                <div class="progress">
+                    <div id="diskBar"></div>
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icon">
+                    PROC
+                </div>
+
+                <h3>Processes</h3>
+
+                <div class="value" id="processes">
+                    --
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="information">
+
+            <div class="info-box">
+
+                <h2>System Information</h2>
+
+                <p>
+                    <strong>Hostname:</strong>
+                    <span id="hostname">Loading...</span>
+                </p>
+
+                <p>
+                    <strong>Uptime:</strong>
+                    <span id="uptime">Loading...</span>
+                </p>
+
+            </div>
+
+
+            <div class="info-box">
+
+                <h2>Diagnostic Alerts</h2>
+
+                <div id="alerts">
+                    Checking system...
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="report">
+
+            <h2>Diagnostic Report</h2>
+
+            <p>
+                Generate a consolidated Linux system report.
+            </p>
+
+            <button onclick="generateReport()">
+                Generate Report
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        Linux System Diagnostics Toolkit
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+# Compiled C executable
+backend/diagnostics
+
+# Object files
+*.o
+
+# Generated reports
+diagnostic_report.txt
+
+# Editor and operating system files
+.vscode/
+.DS_Store

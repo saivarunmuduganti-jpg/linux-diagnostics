@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+    min-height: 100vh;
+}
+
+
+/* HEADER */
+
+header {
+    height: 70px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 50px;
+
+    background: #111827;
+
+    border-bottom: 1px solid #334155;
+}
+
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+.status {
+    color: #22c55e;
+}
+
+
+/* MAIN */
+
+main {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 40px 25px;
+}
+
+
+/* HERO */
+
+.hero {
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+
+.hero h1 {
+    font-size: 42px;
+
+    margin-bottom: 15px;
+}
+
+
+.hero p {
+    color: #94a3b8;
+
+    font-size: 18px;
+
+    margin-bottom: 25px;
+}
+
+
+button {
+    background: #2563eb;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 22px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+
+button:hover {
+    background: #1d4ed8;
+}
+
+
+/* CARDS */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+
+    margin-bottom: 30px;
+}
+
+
+.card {
+    background: #1e293b;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    border: 1px solid #334155;
+
+    transition: 0.3s;
+}
+
+
+.card:hover {
+    transform: translateY(-5px);
+
+    border-color: #2563eb;
+}
+
+
+.icon {
+    color: #60a5fa;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+
+.card h3 {
+    color: #cbd5e1;
+
+    margin-bottom: 15px;
+}
+
+
+.value {
+    font-size: 32px;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+
+/* PROGRESS */
+
+.progress {
+    width: 100%;
+
+    height: 8px;
+
+    background: #334155;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+
+.progress div {
+    height: 100%;
+
+    width: 0%;
+
+    background: #3b82f6;
+
+    transition: width 0.5s;
+}
+
+
+/* INFORMATION */
+
+.information {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+
+    margin-bottom: 30px;
+}
+
+
+.info-box {
+    background: #1e293b;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    border: 1px solid #334155;
+}
+
+
+.info-box h2 {
+    margin-bottom: 20px;
+}
+
+
+.info-box p {
+    margin: 12px 0;
+
+    color: #cbd5e1;
+}
+
+
+#alerts {
+    padding: 15px;
+
+    background: #0f172a;
+
+    border-radius: 8px;
+
+    color: #22c55e;
+}
+
+
+/* REPORT */
+
+.report {
+    background: #1e293b;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    border: 1px solid #334155;
+}
+
+
+.report h2 {
+    margin-bottom: 10px;
+}
+
+
+.report p {
+    color: #94a3b8;
+
+    margin-bottom: 20px;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+
+    padding: 25px;
+
+    color: #64748b;
+
+    border-top: 1px solid #334155;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .cards {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 0 20px;
+    }
+
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    .information {
+        grid-template-columns: 1fr;
+    }
+
+}
